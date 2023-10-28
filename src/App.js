@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className='overflow-hidden py-10'>
       {/* <Header/> */}
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.REACT_APP_URI}>
       <Routes>
 				<Route path="/" exact element={<Gallery/>} /> 
         </Routes>
