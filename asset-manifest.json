@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NFT-Gallery/static/css/main.f745e5bc.css",
-    "main.js": "/NFT-Gallery/static/js/main.a582f013.js",
-    "index.html": "/NFT-Gallery/index.html",
-    "main.f745e5bc.css.map": "/NFT-Gallery/static/css/main.f745e5bc.css.map",
-    "main.a582f013.js.map": "/NFT-Gallery/static/js/main.a582f013.js.map"
+    "main.css": "https://harisahmedz.github.io/NFT-Gallery/static/css/main.f745e5bc.css",
+    "main.js": "https://harisahmedz.github.io/NFT-Gallery/static/js/main.cd4f0502.js",
+    "index.html": "https://harisahmedz.github.io/NFT-Gallery/index.html",
+    "main.f745e5bc.css.map": "https://harisahmedz.github.io/NFT-Gallery/static/css/main.f745e5bc.css.map",
+    "main.cd4f0502.js.map": "https://harisahmedz.github.io/NFT-Gallery/static/js/main.cd4f0502.js.map"
   },
   "entrypoints": [
     "static/css/main.f745e5bc.css",
-    "static/js/main.a582f013.js"
+    "static/js/main.cd4f0502.js"
   ]
 }
