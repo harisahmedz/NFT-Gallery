@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NFT-Gallery/static/css/main.f745e5bc.css",
+    "main.js": "/NFT-Gallery/static/js/main.a582f013.js",
+    "index.html": "/NFT-Gallery/index.html",
+    "main.f745e5bc.css.map": "/NFT-Gallery/static/css/main.f745e5bc.css.map",
+    "main.a582f013.js.map": "/NFT-Gallery/static/js/main.a582f013.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f745e5bc.css",
+    "static/js/main.a582f013.js"
+  ]
+}
