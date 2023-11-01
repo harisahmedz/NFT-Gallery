@@ -8,7 +8,7 @@ const Backdrop = props =>{
 const ModalOverlay = props=>{
     return <div className="border border-solid rounded-xl fixed left-1/2 top-[40%] sm:top-1/2 transform z-30 text-white
           
-    p-1 border-secondary-black overlay-tertiary-black fixed lg:w-[80%] w-11/12 xl:max-w-7xl lg:max-w-[95vw] sm:max-h-[90vh] bg-transparent max-w-[1270px] max-h-[670px] rounded-xl " style={{animation:"slide-down 300ms ease-out forwards", opacity: "1", transform: "translate3d(-50%, -50%, 0px) scale(1)"}}>
+    p-1 border-secondary-black overlay-tertiary-black fixed lg:w-[80%] w-11/12 xl:max-w-7xl lg:max-w-[95vw] sm:max-h-[86vh] bg-transparent max-w-[1270px] max-h-[400px] rounded-xl " style={{animation:"slide-down 300ms ease-out forwards", opacity: "1", transform: "translate3d(-50%, -50%, 0px) scale(1)"}}>
         <div>  {props.children} </div>
     </div>
 };

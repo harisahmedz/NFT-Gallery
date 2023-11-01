@@ -44,14 +44,14 @@ const CardInfo = ({ onHide, data }) => {
 
           </button>
           <div className="md:col-span-6 sm:col-span-5 col-span-6 square grid grid-cols-1 relative">
-            <img src={data.image} className="lg:w-full overlay-item mx-auto square h-[100%] w-[300px] sm:width-[100%]" />
+            <img src={data.image} className="lg:w-full overlay-item mx-auto square h-[100%] w-[275px] sm:width-[100%]" />
           </div>
 
-          <div className="h-full relative col-span-6 sm:col-span-7 md:col-span-6 md:pr-10 md:pl-0 px-6 md:py-0 sm:py-6 pb-6 pt-1 flex-col w-full flex justify-center text-black">
+          <div className="h-full relative col-span-6 sm:col-span-7 md:col-span-6 md:pr-10 md:pl-0 px-6 md:py-0 sm:py-6 pb-2 sm:pb-6 pt-1 flex-col w-full flex justify-center text-black">
 
             <div className=" border-opacity-10 flex flex space-between items-end border-opacity-10 w-full border-bb border-black">
-              <div className="sm:mt-10 mt-4 w-full ">
-                <div className="overflow-hidden text-left px-4 pt-3 bg-black  bg-opacity-10 pb-2 rounded w-full border-opacity-0 border-white duration-300">
+              <div className="sm:mt-10 mt-2 w-full ">
+                <div className="overflow-hidden text-left sm:px-4 px-3 pt-3 bg-black  bg-opacity-10 pb-2 rounded w-full border-opacity-0 border-white duration-300">
                   <div className="flex items-center h-full translate-x-0">
                     <div className=" cursor-default w-6 h-6 grid grid-cols-1 group  z-100">
                       <svg class="opacity-100 duration-300 fill-current overlay-item w-full h-full " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.275 22.5h2.337l1.686-5.65h4.466v-2.1H15.92l1.716-5.796h4.436v-2.1h-3.815L19.853 1.5h-2.366l-1.598 5.354h-4.82L12.664 1.5H10.3L8.702 6.854H4.236v2.1H8.08L6.365 14.75H1.93v2.1h3.815L4.088 22.5h2.337l1.686-5.65h4.82l-1.656 5.65Zm-2.543-7.75 1.715-5.796h4.821l-1.715 5.797H8.732Z" fill-rule="nonzero"></path></svg>
@@ -78,7 +78,7 @@ const CardInfo = ({ onHide, data }) => {
 
             <div className="grid h-full grid-cols-1">
               <div className="overlay-item flex flex-col z-100 justify-between">
-                <ul className="pt-2 mt-6 md:grid-cols-2 gap-3 md:grid lg:w-auto flex scrollbar-simple  overflow-x-auto">
+                <ul className="pt-2 mt-2 sm:mt-6 md:grid-cols-2 gap-3 md:grid lg:w-auto flex scrollbar-simple  overflow-x-auto">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map(() => (
                     <li className=" text-xs items-center p-2 lg:p-3 flex rounded  border-black shrink-0 w-[75%] md:w-full" style={{ backgroundColor: "rgba(0,0,0,.05)" }}>
                       <img src="	https://www.azuki.com/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FType.png&w=64&q=75" className="w-8 pr-2 text-transparent" />
@@ -92,7 +92,7 @@ const CardInfo = ({ onHide, data }) => {
 
 
                 </ul>
-                <div className="mt-auto flex w-full rounded bg-opacity-10 mb-4 py-2">
+                <div className="mt-auto flex w-full rounded bg-opacity-10 mb-1  sm:mb-4 py-2">
                   <a class="cursor-pointer px-2 py-2 bg-opacity-10 bg-white h-full w-ful rounded flex flex-row items-center hover:bg-opacity-30 transition duration-100 fast-fade-in" href="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-6 h-6 mx-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path></svg>
                     <div>

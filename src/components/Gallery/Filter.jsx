@@ -5,7 +5,7 @@ const Filter = ({ TabsData }) => {
     return (
         <>
             <div className='flex flex-col lg:w-1/4  md:min-w-[240px] lg:min-w-[280px] relative'>
-                <div className=' lg:block relative z-40 flex  justify-between h-12  border-b border-opacity-10 border-white'>
+                <div className=' lg:block relative z-10 flex  justify-between h-12  border-b border-opacity-10 border-white'>
                     <h1 className=' text-xl uppercase font-extrabold tracking-tight goldentext'>Filter</h1>
                 </div>
 

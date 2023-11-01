@@ -148,7 +148,7 @@ const Gallery = () => {
 
                 </OffCanvasBody>
                 <OffCanvasMenu >
-                    <div className="bg-black px-3 py-2 pt-4 min-h-[100vh] z-50" style={{ zIndex: 900 }}>
+                    <div className="bg-black px-3 py-2 pt-4 min-h-[100vh] overflow-y-auto z-50" style={{ zIndex: 900 }}>
                         <Filter TabsData={FilterTabs} />
                         <button class="absolute z-50 block top-4 right-4 text-white" onClick={()=>(setOffCanvas(false))}>
                             <svg class="fill-current w-6 h-6" viewBow="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
