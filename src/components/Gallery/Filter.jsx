@@ -5,12 +5,12 @@ const Filter = ({ TabsData }) => {
     return (
         <>
             <div className='flex flex-col lg:w-1/4  md:min-w-[240px] lg:min-w-[280px] relative'>
-                <div className=' lg:block relative z-10 flex  justify-between h-12  border-b border-opacity-10 border-white'>
+                <div className=' lg:block relative z-40 flex  justify-between h-12  border-b border-opacity-10 border-white'>
                     <h1 className=' text-xl uppercase font-extrabold tracking-tight goldentext'>Filter</h1>
                 </div>
 
 
-                <div className='overflow-y-auto pb-3  lg:px-0 pt-3 lg:max-h-[calc(100vh-6.5rem)] tabs-main'>
+                <div className='overflow-y-auto pb-3  lg:px-0 pt-3 max-h-auto lg:max-h-[calc(100vh-6.5rem)] tabs-main'>
 
                     <form className='flex  w-full pb-2 lg:pb-3 focus:border-red-300 focus-within:border-b-black border-b relative border-opacity-10  items-center border-white'>
                         <img alt="" src="https://www.azuki.com/_next/image?url=%2Ffiltericons%2FWhite%2FSearch.png&w=64&q=75"   className="lg:w-7 lg:h-7 h-5 w-5  mr-2 "></img>
@@ -20,7 +20,7 @@ const Filter = ({ TabsData }) => {
 
                     {
                         TabsData.map((item) => (
-                            <details className="border-b border-opacity-10  py-0 border-white opacity-100">
+                            <details className="border-b border-opacity-10  z-10 py-0 border-white opacity-100">
                                 <summary className="w-full py-2 lg:py-3 flex items-center justify-between text-sm hover:opacity-80  after:content-plus">
                                     <span className="font-600 flex items-center relative text-[11px] lg:text-xs uppercase ">
                                         <img alt="" src={item.icon}  className="lg:w-7 lg:h-7 h-5 w-5 mr-2" />

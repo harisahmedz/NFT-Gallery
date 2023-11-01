@@ -143,12 +143,12 @@ const Gallery = () => {
                 isMenuOpened={offCanvas}
                 position={"right"}
             >
-                <OffCanvasBody className="bg-black"
+                <OffCanvasBody className="bg-black z-50"
                 >
 
                 </OffCanvasBody>
                 <OffCanvasMenu >
-                    <div className="bg-black px-3 py-2 pt-4 h-[100vh] z-100">
+                    <div className="bg-black px-3 py-2 pt-4 min-h-[100vh] z-50" style={{ zIndex: 900 }}>
                         <Filter TabsData={FilterTabs} />
                         <button class="absolute z-50 block top-4 right-4 text-white" onClick={()=>(setOffCanvas(false))}>
                             <svg class="fill-current w-6 h-6" viewBow="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -164,7 +164,7 @@ const Gallery = () => {
     )
     return (
         <>
-            {offCanvas && (offCanvasFilter)}
+            
             <div className='mt-2 pt-4  px-[3%] pb-[4%] flex flex-col md:flex-row gap-x-3 w-full'>
                 <div className='hidden md:block'><Filter TabsData={FilterTabs} /></div>
                 <div className="lg:px-8 w-full">
@@ -193,10 +193,13 @@ const Gallery = () => {
 
 
                     </div>
-                    {/* <Cards/> */}
-                    <div className="md:hidden mt-3 mb-4" onClick={() => (setOffCanvas(!offCanvas))}>
-                        <h3 class="text-xs flex pr-2 items-center font-semibold uppercase tracking-wide opacity-50">Filters<span class="h-5 w-5 ml-2 text-4xs flex items-center justify-center rounded bg-gray-200 text-black"><i class="fa-solid fa-bars-staggered"></i></span></h3>
+                    
+                    <div className="md:hidden mt-3 mb-4" style={{ zIndex: 10 }} onClick={() => (setOffCanvas(!offCanvas))}>
+                        <h3 class="text-xs  flex pr-2 items-center font-semibold uppercase tracking-wide opacity-50">
+                            Filters<span class="h-5 w-5 ml-2 text-4xs flex items-center justify-center rounded bg-gray-200 text-black"><i class="fa-solid fa-bars-staggered"></i></span></h3>
                     </div>
+                    {offCanvas && (offCanvasFilter)}
+                    {/* <Cards/> */}
                     <div className='lg:mt-4 mt-2'>
                         <Cards data={tabsData[activeTabIndex]} />
                     </div>
